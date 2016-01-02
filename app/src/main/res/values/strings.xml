@@ -2,5 +2,36 @@
     <string name="app_name">Quizzer</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_quiz">QuizActivity</string>
-    <string name="politics">[{"question":"Question Number One", [{"answer": "Ansewr 1"}, {"answer": "Anser 2", "correct": "true"}]}, {"question":"Question Number Two", [{"answer": "sonss", "correct": "true"}, {"answer": "Anser 2"}]} ]</string>
+    <string name="politics">
+    <![CDATA[
+        {
+            \"quiz\": [
+                {
+                    \"question\":\"Question Number One\",
+                    \"choices\":[
+                        {
+                            \"answer\": \"Ansewr 1\"
+                        },
+                        {
+                            \"answer\": \"Anser 2\",
+                            \"correct\": \"true\"
+                        }
+                    ]
+                },
+                {
+                    \"question\":\"Question Number Two\",
+                    \"choices\":[
+                        {
+                            \"answer\": \"sonss\",
+                            \"correct\": \"true\"
+                        },
+                        {
+                            \"answer\": \"Anser 2\"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]]>
+    </string>
 </resources>

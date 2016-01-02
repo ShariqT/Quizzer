@@ -43,59 +43,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:id="@+id/radioGroup"
             android:paddingBottom="40dp">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New RadioButton"
-                android:id="@+id/ans1"
-                android:layout_gravity="center_horizontal"
-                android:checked="false" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New RadioButton"
-                android:id="@+id/ans2"
-                android:layout_gravity="center_horizontal"
-                android:checked="false" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New RadioButton"
-                android:id="@+id/ans3"
-                android:layout_gravity="center_horizontal"
-                android:checked="false" />
         </RadioGroup>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:weightSum="1">
+            android:text="Check Answer"
+            android:id="@+id/submitBtn"
+            android:layout_gravity="center_horizontal" />
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Prev"
-                android:id="@+id/prevBtn" />
-
-            <Space
-                android:layout_width="101dp"
-                android:layout_height="54dp"
-                android:layout_weight="0.97" />
-
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Next"
-                android:id="@+id/nextBtn" />
-        </LinearLayout>
 
     </LinearLayout>
 </RelativeLayout>
