@@ -6,9 +6,12 @@ import android.os.Handler;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Layout;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -95,7 +98,13 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
             for (int i = 0; i < answerArray.length(); i++) {
                 RadioButton btn = new RadioButton(this);
                 btn.setText(answerArray.getJSONObject(i).getString("answer"));
+
                 possibleAnswers.addView(btn,i);
+                //get the button now that its been added to the group and change its layout params
+
+                LinearLayout.LayoutParams llp = (LinearLayout.LayoutParams) possibleAnswers.getChildAt(i).getLayoutParams();
+                llp.gravity = Gravity.CENTER;
+                possibleAnswers.getChildAt(i).setLayoutParams(llp);
             }
         }catch(Exception e){
             //something went wrong parsing out the JSON from the strings.xml

@@ -34,4 +34,5 @@
         }
     ]]>
     </string>
+    <string name="title_activity_results">ResultsActivity</string>
 </resources>
