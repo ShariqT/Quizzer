@@ -71,7 +71,9 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                     setUpQuiz();
                 }else{
                     //we have reached the end of the quiz
-                    Intent i = new Intent(QuizActivity.this, MainActivity.class);
+                    Intent i = new Intent(QuizActivity.this, ResultsActivity.class);
+                    i.putExtra("total questions", currentQuiz.getTotalQuestions());
+                    i.putExtra("correct answers", currentQuiz.getCorrectAnswers());
                     startActivity(i);
                 }
             }

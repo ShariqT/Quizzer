@@ -35,4 +35,7 @@
     ]]>
     </string>
     <string name="title_activity_results">ResultsActivity</string>
+    <string name="sucks">Damn, you really don\'t know the 90\'s, do you? Chump!</string>
+    <string name="middling">You\'re doing ok. You know stuff, you don\'t know stuff. You\'re fine.</string>
+    <string name="good">You are like Karl Kani, BOSS, and JNCO rolled up into one!</string>
 </resources>

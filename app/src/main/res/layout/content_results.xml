@@ -13,7 +13,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
+        android:id="@+id/spiritAnimal"
         android:minHeight="130dp"
         android:minWidth="140dp"
         android:layout_alignParentEnd="true"
@@ -24,28 +24,62 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Message"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/imageView"
+        android:id="@+id/statusMessage"
+        android:layout_below="@+id/spiritAnimal"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="71dp" />
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="71dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Final Score: 2/5"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp" />
 
-    <Button
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Another Quiz"
-        android:id="@+id/button"
-        android:layout_below="@+id/textView3"
+        android:layout_below="@+id/statusMessage"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp" />
+        android:id="@+id/llayout"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Final Score:"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:id="@+id/correct_answers" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="/"
+            android:id="@+id/textView6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="10"
+            android:id="@+id/total_questions" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Another Quiz"
+        android:id="@+id/resetBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:layout_below="@+id/llayout"
+        android:layout_gravity="center_vertical" />
 
 </RelativeLayout>

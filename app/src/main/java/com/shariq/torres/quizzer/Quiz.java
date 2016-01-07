@@ -50,6 +50,14 @@ public class Quiz {
     }
 
 
+    public int getTotalQuestions(){
+        return this.questions.size();
+    }
+
+    public int getCorrectAnswers(){
+        return this.score / 10;
+    }
+
     private void loadQuiz(){
         try {
             JSONObject jsonText = new JSONObject((String)ctx.getResources().getText(R.string.politics));
