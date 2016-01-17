@@ -26,6 +26,11 @@ public class Quiz {
 
     private Context ctx;
 
+    private int NEWS = R.string.news;
+    private int SPORTS = R.string.sports;
+    private int MUSIC = R.string.music;
+
+
     public Quiz(String type, Context ctx){
         this.type = type;
         this.ctx = ctx;
@@ -59,8 +64,23 @@ public class Quiz {
     }
 
     private void loadQuiz(){
+
         try {
-            JSONObject jsonText = new JSONObject((String)ctx.getResources().getText(R.string.politics));
+            JSONObject jsonText;
+            switch(this.type){
+                case "news":
+                    jsonText = new JSONObject((String)ctx.getResources().getText(this.NEWS));
+                    break;
+                case "music":
+                    jsonText = new JSONObject((String)ctx.getResources().getText(this.MUSIC));
+                    break;
+                case "sports":
+                    jsonText = new JSONObject((String)ctx.getResources().getText(this.SPORTS));
+                    break;
+                default:
+                    jsonText = new JSONObject((String)ctx.getResources().getText(this.NEWS));
+                    break;
+            }
             //Log.d("Quizzer", jsonText.toString());
             JSONArray currentQuestion = jsonText.getJSONArray("quiz");
             this.questions = new ArrayList<String>();

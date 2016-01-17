@@ -41,13 +41,27 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         submitBtn = (Button) findViewById(R.id.submitBtn);
         submitBtn.setOnClickListener(this);
 
-        quizType = getIntent().getStringExtra("type");
-        if(quizType != null){
+
+        if(getIntent().getStringExtra("type") != null){
+            quizType = getIntent().getStringExtra("type");
             currentQuiz = new Quiz(quizType, this);
+            this.setUpQuiz();
+        }
+
+        if(savedInstanceState != null){
+            currentIndex = savedInstanceState.getInt("currentIndex");
+            quizType = savedInstanceState.getString("type");
+            currentQuiz = new Quiz(quizType,this);
             this.setUpQuiz();
         }
     }
 
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState){
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt("currentIndex", this.currentIndex);
+        savedInstanceState.putString("type", this.quizType);
+    }
 
 
 

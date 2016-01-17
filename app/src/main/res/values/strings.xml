@@ -2,37 +2,154 @@
     <string name="app_name">Quizzer</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_quiz">QuizActivity</string>
-    <string name="politics">
+    <string name="news">
     <![CDATA[
         {
+
             \"quiz\": [
                 {
-                    \"question\":\"Question Number One\",
+                    \"question\": \"What year did the LA Riots happen?\",
                     \"choices\":[
-                        {
-                            \"answer\": \"Ansewr 1\"
-                        },
-                        {
-                            \"answer\": \"Anser 2\",
-                            \"correct\": \"true\"
-                        }
+                        { \"answer\": \"1990\"},
+                        { \"answer\": \"1991\"},
+                        { \"answer\": \"1992\", \"correct\": \"true\"}
                     ]
                 },
                 {
-                    \"question\":\"Question Number Two\",
-                    \"choices\":[
-                        {
-                            \"answer\": \"sonss\",
-                            \"correct\": \"true\"
-                        },
-                        {
-                            \"answer\": \"Anser 2\"
-                        }
+                    \"question\": \"John Gotti was convicted due to the testimony of which former gang member?\",
+                    \"choices\": [
+                        { \"answer\": \"William Hersch\"},
+                        { \"answer\": \"Tito Romanero\"},
+                        { \"answer\": \"Sammy Gravano\", \"correct\": \"true\"}
+
+                    ]
+                },
+                {
+                    \"question\":\"Members of the Heaven\'s Gate cult committed suicide in coordination with the approach of which comet?\",
+                    \"choices\": [
+                        { \"answer\": \"Hale Bopp Comet\", \"correct\": \"true\"},
+                        { \"answer\": \"Haley\'s Comet\"},
+                        { \"answer\": \"The K12 Comet\"}
+                    ]
+                },
+                {
+                    \"question\":\"Name the Republican nominee for president in 1996\",
+                    \"choices\": [
+                        { \"answer\": \"Bob Dole\", \"correct\": \"true\"},
+                        { \"answer\": \"Jack Kemp\"},
+                        { \"answer\": \"John McCain\"}
+                    ]
+                },
+                {
+                    \"question\": \"What was the name of the devastating hurricane that hit Florida in 1992?\",
+                    \"choices\": [
+                        { \"answer\": \"Hazel\"},
+                        { \"answer\": \"Andrew\", \"correct\": \"true\"},
+                        { \"answer\": \"Larry\"}
                     ]
                 }
+
             ]
         }
     ]]>
+    </string>
+    <string name="music">
+        <![CDATA[
+            {
+                \"quiz\": [
+                    {
+                        \"question\": \"Which rap group was totally crossed out?\",
+                        \"choices\":[
+                            { \"answer\": \"Kriss Kross\", \"correct\": \"true\"},
+                            { \"answer\": \"Krucial Konflict\"},
+                            { \"answer\": \"Wu-Tang Clan\"}
+                        ]
+                    },
+                    {
+                        \"question\": \"What famous star appeared in Paula Abdul\'s \'Rush, Rush\' video?\",
+                        \"choices\": [
+                            { \"answer\": \"Micheal Jordan\"},
+                            { \"answer\": \"Keanu Reeves\", \"correct\": \"true\"},
+                            { \"answer\": \"Ahmed Rashad\"}
+                        ]
+                    },
+                    {
+                        \"question\":\"What day did 2Pac die?\",
+                        \"choices\": [
+                            { \"answer\": \"March 15th\, 1995\"},
+                            { \"answer\": \"September 13th\, 1996\", \"correct\": \"true\"},
+                            { \"answer\": \"October 31st\, 1996\"}
+                        ]
+                    },
+                    {
+                        \"question\":\"Name the debut album for O\.D\.B?\",
+                        \"choices\": [
+                            { \"answer\": \"Enter the 36 Chambers\"},
+                            { \"answer\": \"Daytona 500\"},
+                            { \"answer\": \"Brooklyn Zoo\", \"correct\": \"true\"}
+                        ]
+                    },
+                    {
+                        \"question\": \"Which Michael Jackson song entered straight at No\. 1 position on Billboard 100 Singles Chart?\",
+                        \"choices\": [
+                            { \"answer\": \"Smooth Criminal\"},
+                            { \"answer\": \"Remember The Time\"},
+                            { \"answer\": \"You Are Not Alone\", \"correct\": \"true\"}
+                        ]
+                    }
+                ]
+            }
+        ]]>
+    </string>
+    <string name="sports">
+        <![CDATA[
+            {
+
+                \"quiz\": [
+                    {
+                        \"question\": \"Who won the 1994 World Cup?\",
+                        \"choices\":[
+                            { \"answer\": \"Italy\"},
+                            { \"answer\": \"Brazil\", \"correct\": \"true\"},
+                            { \"answer\": \"England\"},
+                        ]
+                    },
+                    {
+                        \"question\": \"Who was the 1997 NCAA Men\'s Basketball Champion?\",
+                        \"choices\": [
+                            { \"answer\": \"Arizona Wildcats\", \"correct\": \"true\"},
+                            { \"answer\": \"UNC Tarheels\"},
+                            { \"answer\": \"Texas Longhorns\"}
+                        ]
+                    },
+                    {
+                        \"question\":\"Who did the Chicago Bulls play in the 1997 Finals?\",
+                        \"choices\": [
+                            { \"answer\": \"Utah Jazz\", \"correct\": \"true\"},
+                            { \"answer\": \"L.A. Lakers\"},
+                            { \"answer\": \"Portland Trailblazers\"}
+                        ]
+                    },
+                    {
+                        \"question\":\"What teams played in Super Bowl XXX?\",
+                        \"choices\": [
+                            { \"answer\": \"New England Patriots vs New York Giants\"},
+                            { \"answer\": \"Dallas Cowboys vs Pittsburg Steelers\", \"correct\": \"true\"},
+                            { \"answer\": \"Dallas Cowboys vs New England Patriots\"}
+                        ]
+                    },
+                    {
+                        \"question\": \"Which basketball players were a part of the Original Dream Team that played in the Barcelona Olympics?\",
+                        \"choices\": [
+                            { \"answer\": \"Micheal Jordan, Russell Westbrook, David Robinson\"},
+                            { \"answer\": \"Magic Johnson, Charles Oakley, Danny Manning\"},
+                            { \"answer\": \"Larry Bird, John Stockon, Charles Barkley\", \"correct\": \"true\"}
+                        ]
+                    }
+
+                ]
+            }
+        ]]>
     </string>
     <string name="title_activity_results">ResultsActivity</string>
     <string name="sucks">Damn, you really don\'t know the 90\'s, do you? Chump!</string>
